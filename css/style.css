@@ -6,7 +6,8 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   box-sizing: border-box; }
@@ -53,6 +54,10 @@ body {
   text-transform: uppercase;
   backface-visibility: hidden;
   margin-bottom: 3rem; }
+  .heading-primary--large {
+    display: inline-block;
+    width: 85%;
+    font-size: 4rem; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -84,9 +89,15 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   text-transform: uppercase; }
+  .heading-tertiary--white {
+    color: #fff; }
 
 .paragraph {
   font-size: 1.6rem; }
+  .paragraph--white {
+    display: inline-block;
+    width: 95%;
+    color: #fff; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -190,6 +201,25 @@ body {
 
 .btn-text:active {
   box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.2); }
+
+.btn-link {
+  margin: 1rem 0; }
+  .btn-link:link, .btn-link:visited {
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    color: #55c57a;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #55c57a;
+    padding: 3px;
+    transition: all 0.2s;
+    padding: 0.5rem 1rem; }
+  .btn-link:hover {
+    font-size: 1.6rem;
+    color: #fff;
+    background-color: #28b485;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transform: scaleY(-2px); }
 
 .card {
   perspective: 150rem;
@@ -322,7 +352,7 @@ body {
     transform: translateY(-1.5rem) scale(1.02); }
 
 .form__group:not(:last-child) {
-  margin-bottom: 2rem; }
+  margin-bottom: 1.5rem; }
 
 .form__input {
   font-size: 1.6rem;
@@ -441,7 +471,13 @@ body {
     transform: scale(1.1);
     filter: blur(3px) brightness(80%); }
 
+.story--background {
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8));
+  background-size: cover;
+  margin-top: 5rem; }
+
 .footer {
+  margin-top: 3rem;
   background-color: #333;
   padding: 5rem 0;
   font-size: 1.4rem;
@@ -481,6 +517,9 @@ body {
     text-align: center;
     padding: 1rem; }
 
+.footer--features {
+  margin-top: 15rem; }
+
 .row {
   max-width: 114rem;
   margin: 2rem auto; }
@@ -516,10 +555,10 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%); }
   .header__logo-box {
     position: absolute;
-    top: 2.5rem;
+    top: 4rem;
     left: 3rem; }
   .header__logo {
-    height: 4rem; }
+    height: 5rem; }
   .header__text-box {
     position: absolute;
     top: 40%;
@@ -527,13 +566,17 @@ body {
     transform: translate(-50%, -50%);
     text-align: center; }
 
+.header--book {
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/banner-bg.jpg);
+  clip-path: none; }
+
 .navigation__checkbox {
   display: none; }
 
 .navigation__button {
   background-color: #fff;
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
   position: fixed;
   top: 6.5rem;
   right: 6.5rem;
@@ -544,12 +587,12 @@ body {
   cursor: pointer; }
 
 .navigation__background {
-  height: 6rem;
-  width: 6rem;
+  height: 5rem;
+  width: 5rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.7rem;
-  right: 6.7rem;
+  top: 6.5rem;
+  right: 6.5rem;
   background-image: radial-gradient(#7ed56f, #28b485);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
@@ -605,9 +648,9 @@ body {
 
 .navigation__icon {
   position: relative;
-  margin-top: 3.5rem; }
+  margin-top: 2.5rem; }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-    width: 3rem;
+    width: 2rem;
     height: 2px;
     background-color: #333;
     display: inline-block; }
@@ -640,8 +683,7 @@ body {
 
 .section-about {
   background-color: #f7f7f7;
-  padding: 20rem 0;
-  margin-top: -15vh; }
+  padding: 10rem 0; }
 
 .section-features {
   padding: 20rem 0;
@@ -664,6 +706,7 @@ body {
   padding: 15rem 0; }
 
 .section-book {
+  margin-top: 4rem;
   padding: 15rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
 
@@ -672,8 +715,7 @@ body {
   background-size: 100%;
   background-position: center right;
   border-radius: 5px;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-  height: 50rem; }
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); }
   .book__form {
     width: 50%;
     padding: 6rem; }

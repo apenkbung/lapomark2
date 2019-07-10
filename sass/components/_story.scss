@@ -54,3 +54,13 @@
     filter: blur(3px) brightness(80%);
   }
 }
+
+.story--background {
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary, 0.8),
+    rgba($color-primary-dark, 0.8)
+  );
+  background-size: cover;
+  margin-top: 5rem;
+}

@@ -11,9 +11,14 @@ body {
 .heading-primary {
   color: $color-white;
   text-transform: uppercase;
-
   backface-visibility: hidden;
   margin-bottom: 3rem;
+
+  &--large {
+    display: inline-block;
+    width: 85%;
+    font-size: 4rem;
+  }
 
   &--main {
     display: block;
@@ -59,10 +64,20 @@ body {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
+
+  &--white {
+    color: $color-white;
+  }
 }
 
 .paragraph {
   font-size: $default-font-size;
+
+  &--white {
+    display: inline-block;
+    width: 95%;
+    color: $color-white;
+  }
 
   &:not(:last-child) {
     margin-bottom: 3rem;

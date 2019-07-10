@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 3rem;
   background-color: $color-grey-dark-3;
   padding: 5rem 0;
   font-size: 1.4rem;
@@ -62,4 +63,8 @@
     text-align: center;
     padding: 1rem;
   }
+}
+
+.footer--features {
+  margin-top: 15rem;
 }

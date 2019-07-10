@@ -96,3 +96,27 @@
     box-shadow: 0 0.3rem 0.5rem rgba($color-black, 0.2);
   }
 }
+
+.btn-link {
+  margin: 1rem 0;
+  &:link,
+  &:visited {
+    border-radius: 1rem;
+    font-size: $default-font-size;
+    color: $color-primary;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $color-primary;
+    padding: 3px;
+    transition: all 0.2s;
+    padding: 0.5rem 1rem;
+  }
+
+  &:hover {
+    font-size: $default-font-size;
+    color: $color-white;
+    background-color: $color-primary-dark;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.2);
+    transform: scaleY(-2px);
+  }
+}
