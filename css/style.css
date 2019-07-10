@@ -57,7 +57,8 @@ body {
   .heading-primary--large {
     display: inline-block;
     width: 85%;
-    font-size: 4rem; }
+    font-size: 4rem;
+    animation: moveInLeft 1s ease-out; }
   .heading-primary--main {
     display: block;
     font-size: 6rem;
@@ -93,11 +94,13 @@ body {
     color: #fff; }
 
 .paragraph {
-  font-size: 1.6rem; }
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem; }
   .paragraph--white {
     display: inline-block;
     width: 95%;
-    color: #fff; }
+    color: #fff;
+    animation: moveInRight 1s ease-out; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
 
@@ -570,6 +573,15 @@ body {
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/banner-bg.jpg);
   clip-path: none; }
 
+.navigation__logo-box {
+  position: fixed;
+  top: 6.5rem;
+  left: 6.5rem;
+  z-index: 2000; }
+
+.navigation__logo {
+  height: 5rem; }
+
 .navigation__checkbox {
   display: none; }
 
@@ -707,7 +719,7 @@ body {
 
 .section-book {
   margin-top: 4rem;
-  padding: 15rem 0;
+  padding: 5rem 0;
   background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)); }
 
 .book {
@@ -719,3 +731,6 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem; }
+
+.section-login {
+  padding: 10rem 0; }

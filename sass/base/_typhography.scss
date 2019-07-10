@@ -18,6 +18,8 @@ body {
     display: inline-block;
     width: 85%;
     font-size: 4rem;
+
+    animation: moveInLeft 1s ease-out;
   }
 
   &--main {
@@ -71,12 +73,15 @@ body {
 }
 
 .paragraph {
-  font-size: $default-font-size;
+  font-size: 1.7rem;
+  letter-spacing: 0.3rem;
 
   &--white {
     display: inline-block;
     width: 95%;
     color: $color-white;
+
+    animation: moveInRight 1s ease-out;
   }
 
   &:not(:last-child) {

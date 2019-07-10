@@ -1,4 +1,15 @@
 .navigation {
+  &__logo-box {
+    position: fixed;
+    top: 6.5rem;
+    left: 6.5rem;
+    z-index: 2000;
+  }
+
+  &__logo {
+    height: 5rem;
+  }
+
   &__checkbox {
     display: none;
   }
