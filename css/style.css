@@ -262,6 +262,18 @@ body {
       background-image: linear-gradient(to bottom right, #7ed56f, #28b485), url(../img/p4.jpg); }
     .card__picture--3 {
       background-image: linear-gradient(to bottom right, #2998ff, #5643fa), url(../img/p3.jpg); }
+    .card__picture--gilang {
+      background-image: linear-gradient(to bottom right, rgba(255, 185, 0, 0.3), #ff7730), url(../img/gilang.jpg); }
+    .card__picture--apenk {
+      background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.3), #28b485), url(../img/apenk.jpg); }
+    .card__picture--dimas {
+      background-image: linear-gradient(to bottom right, rgba(41, 152, 255, 0.3), #5643fa), url(../img/dimas.jpg); }
+    .card__picture--sidik {
+      background-image: linear-gradient(to bottom right, rgba(41, 152, 255, 0.3), #5643fa), url(../img/sidik.jpg); }
+    .card__picture--yakob {
+      background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.3), #28b485), url(../img/yakob.jpg); }
+    .card__picture--nuria {
+      background-image: linear-gradient(to bottom right, rgba(255, 185, 0, 0.3), #ff7730), url(../img/nurya.jpg); }
   .card__heading {
     font-size: 2.8rem;
     font-weight: 300;
@@ -269,7 +281,7 @@ body {
     text-align: right;
     color: #fff;
     position: absolute;
-    top: 10rem;
+    top: 15rem;
     right: 2rem;
     width: 75%; }
   .card__heading-span {
@@ -282,7 +294,10 @@ body {
     .card__heading-span--3 {
       background-image: linear-gradient(to right bottom, rgba(41, 152, 255, 0.85), rgba(86, 67, 250, 0.85)); }
   .card__details {
+    text-align: center;
     padding: 3rem; }
+    .card__details--team {
+      padding: 2rem; }
     .card__details ul {
       list-style: none;
       width: 80%;
@@ -438,7 +453,8 @@ body {
   padding: 6rem;
   padding-left: 9rem;
   font-size: 1.6rem;
-  transform: skewX(-12deg); }
+  transform: skewX(-12deg);
+  height: 25rem; }
   .story__shape {
     height: 15rem;
     width: 15rem;
@@ -491,6 +507,10 @@ body {
   .footer__logo {
     width: 12rem; }
   .footer__navigation {
+    border-top: 1px solid #777;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer__social {
     border-top: 1px solid #777;
     padding-top: 2rem;
     display: inline-block; }
@@ -731,6 +751,9 @@ body {
   .book__form {
     width: 50%;
     padding: 6rem; }
+
+.section-faq {
+  padding: 10rem 0; }
 
 .section-login {
   padding: 10rem 0; }

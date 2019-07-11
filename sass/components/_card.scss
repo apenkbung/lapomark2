@@ -88,6 +88,60 @@
         ),
         url(../img/p3.jpg);
     }
+
+    &--gilang {
+      background-image: linear-gradient(
+          to bottom right,
+          rgba($color-secondary-light, 0.3),
+          $color-secondary-dark
+        ),
+        url(../img/gilang.jpg);
+    }
+
+    &--apenk {
+      background-image: linear-gradient(
+          to bottom right,
+          rgba($color-primary-light, 0.3),
+          $color-primary-dark
+        ),
+        url(../img/apenk.jpg);
+    }
+
+    &--dimas {
+      background-image: linear-gradient(
+          to bottom right,
+          rgba($color-tertiary-light, 0.3),
+          $color-tertiary-dark
+        ),
+        url(../img/dimas.jpg);
+    }
+
+    &--sidik {
+      background-image: linear-gradient(
+          to bottom right,
+          rgba($color-tertiary-light, 0.3),
+          $color-tertiary-dark
+        ),
+        url(../img/sidik.jpg);
+    }
+
+    &--yakob {
+      background-image: linear-gradient(
+          to bottom right,
+          rgba($color-primary-light, 0.3),
+          $color-primary-dark
+        ),
+        url(../img/yakob.jpg);
+    }
+
+    &--nuria {
+      background-image: linear-gradient(
+          to bottom right,
+          rgba($color-secondary-light, 0.3),
+          $color-secondary-dark
+        ),
+        url(../img/nurya.jpg);
+    }
   }
 
   &__heading {
@@ -97,7 +151,7 @@
     text-align: right;
     color: $color-white;
     position: absolute;
-    top: 10rem;
+    top: 15rem;
     right: 2rem;
     width: 75%;
   }
@@ -132,7 +186,12 @@
   }
 
   &__details {
+    text-align: center;
     padding: 3rem;
+
+    &--team {
+      padding: 2rem;
+    }
 
     ul {
       list-style: none;

@@ -20,6 +20,12 @@
     display: inline-block;
   }
 
+  &__social {
+    border-top: 1px solid $color-grey-dark;
+    padding-top: 2rem;
+    display: inline-block;
+  }
+
   &__list {
     list-style: none;
   }
