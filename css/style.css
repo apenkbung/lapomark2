@@ -94,12 +94,12 @@ body {
     color: #fff; }
 
 .paragraph {
-  font-size: 1.7rem;
-  letter-spacing: 0.3rem; }
+  font-size: 1.7rem; }
   .paragraph--white {
     display: inline-block;
     width: 95%;
     color: #fff;
+    letter-spacing: 0.3rem;
     animation: moveInRight 1s ease-out; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }

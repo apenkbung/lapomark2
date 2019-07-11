@@ -74,12 +74,12 @@ body {
 
 .paragraph {
   font-size: 1.7rem;
-  letter-spacing: 0.3rem;
 
   &--white {
     display: inline-block;
     width: 95%;
     color: $color-white;
+    letter-spacing: 0.3rem;
 
     animation: moveInRight 1s ease-out;
   }
