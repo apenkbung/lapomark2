@@ -1,6 +1,10 @@
 .section-about {
   background-color: $color-grey-light-1;
   padding: 10rem 0;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 
 .section-features {
@@ -14,10 +18,23 @@
   background-size: cover;
   background-position: left;
   position: relative;
-  // transform: skewY(-5deg);
+  transform: skewY(-5deg);
 
   & > * {
-    // transform: skewY(5deg);
+    transform: skewY(5deg);
+  }
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
+}
+
+.section-stories {
+  position: relative;
+  padding: 15rem 0;
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
   }
 }
 
@@ -27,19 +44,18 @@
   margin-top: -10rem;
 }
 
-.section-stories {
-  position: relative;
-  padding: 15rem 0;
-}
-
 .section-book {
   margin-top: 4rem;
-  padding: 5rem 0;
+  padding: 15rem 0;
   background-image: linear-gradient(
     to right bottom,
     rgba($color-primary-light, 0.8),
     rgba($color-primary-dark, 0.8)
   );
+
+  @include respond(tab-port) {
+    padding: 10rem 0;
+  }
 }
 
 .book {
@@ -58,9 +74,38 @@
 
   // height: 50rem;
 
+  @include respond(tab-land) {
+    background-image: linear-gradient(
+        105deg,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 65%,
+        transparent 65%
+      ),
+      url(../img/img4.jpg);
+    background-size: cover;
+  }
+
+  @include respond(tab-port) {
+    background-image: linear-gradient(
+        to right,
+        rgba($color-white, 0.9) 0%,
+        rgba($color-white, 0.9) 100%
+      ),
+      url(../img/img4.jpg);
+    background-size: cover;
+  }
+
   &__form {
     width: 50%;
     padding: 6rem;
+
+    @include respond(tab-land) {
+      width: 65%;
+    }
+
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 }
 
