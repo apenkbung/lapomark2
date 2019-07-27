@@ -33,8 +33,7 @@ html {
       font-size: 80%; } }
 
 body {
-  box-sizing: border-box;
-  padding: 2.5rem; }
+  box-sizing: border-box; }
   @media (max-width: 56.25em) {
     body {
       padding: 0; } }
@@ -613,8 +612,7 @@ body {
     filter: blur(3px) brightness(80%); }
 
 .story--background {
-  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8));
-  background-size: cover;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8));
   margin-top: 5rem; }
 
 .footer {
