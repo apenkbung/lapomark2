@@ -59,7 +59,7 @@
 
     <header class="header">
       <div class="header__logo-box">
-        <img src="img/lapomark.png" alt="Logo" class="header__logo" />
+        <img src="img/lapomark.png" class="header__logo" alt="Full Logo" />
       </div>
 
       <div class="header__text-box">
@@ -109,19 +109,27 @@
           <div class="col-1-of-2">
             <div class="composition">
               <img
-                src="img/img1.jpg"
+                srcset="img/img1-small.jpg 300w, img/img1-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                 alt="Photo 1"
                 class="composition__photo composition__photo--p1"
+                src="img/img1.jpg"
               />
+
               <img
-                src="img/img2.jpg"
+                srcset="img/img2-small.jpg 300w, img/img2-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                 alt="Photo 2"
                 class="composition__photo composition__photo--p2"
+                src="img/img2.jpg"
               />
+
               <img
-                src="img/img3.jpg"
+                srcset="img/img3-small.jpg 300w, img/img3-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
                 alt="Photo 3"
                 class="composition__photo composition__photo--p3"
+                src="img/img3.jpg"
               />
             </div>
           </div>
@@ -164,7 +172,7 @@
                     <p class="card__price-value">$297</p>
                   </div>
 
-                  <a href="book.html" class="btn btn--white">Pesan Sekarang</a>
+                  <a href="#popup" class="btn btn--white">Pesan Sekarang</a>
                 </div>
               </div>
             </div>
@@ -198,7 +206,7 @@
                     <p class="card__price-value">$697</p>
                   </div>
 
-                  <a href="book.html" class="btn btn--white">Pesan Sekarang</a>
+                  <a href="#popup" class="btn btn--white">Pesan Sekarang</a>
                 </div>
               </div>
             </div>
@@ -233,7 +241,7 @@
                     <p class="card__price-value">$897</p>
                   </div>
 
-                  <a href="book.html" class="btn btn--white">Pesan Sekarang</a>
+                  <a href="#popup" class="btn btn--white">Pesan Sekarang</a>
                 </div>
               </div>
             </div>
@@ -397,7 +405,18 @@
 
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/lapomark.png" alt="Logo LapoMark" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="img/lapomark-1x.png 1x, img/lapomark-2x.png 2x"
+            media="(max-width: 37.5em)"
+            src="img/lapomark-2x.png"
+          />
+          <img
+            srcset="img/lapomark-1x.png 1x, img/lapomark-2x.png 2x"
+            alt="Full Logo"
+          />
+        </picture>
+
         <h1 class="heading--footer">LapoMark</h1>
       </div>
 
@@ -461,6 +480,39 @@
         </div>
       </div>
     </footer>
+
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="img/apenk.jpg" alt="Apenk" class="popup__img" />
+          <img src="img/gilang.jpg" alt="Gilang" class="popup__img" />
+        </div>
+
+        <div class="popup__right">
+          <a href="#section-price" class="popup__close">&times;</a>
+
+          <h2 class="heading-secondary u-margin-bottom-small">
+            Start Booking Now
+          </h2>
+
+          <h3 class="heading-tertiary u-margin-bottom-small">
+            Important &ndash; Please Read The terms and Conditions First!
+          </h3>
+
+          <div class="popup__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia,
+            velit magni! Expedita, sit! Delectus necessitatibus, vel laboriosam
+            earum mollitia id est quo iure officia, cumque, at perspiciatis.
+            Nihil, id repellendus? Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Mollitia, velit magni! Expedita, sit! Delectus
+            necessitatibus, vel laboriosam earum mollitia id est quo iure
+            officia, cumque, at perspiciatis. Nihil, id repellendus?
+          </div>
+
+          <a href="#" class="btn btn--green">Pesan Sekarang</a>
+        </div>
+      </div>
+    </div>
 
     <!--
     <section class="grid-test">
